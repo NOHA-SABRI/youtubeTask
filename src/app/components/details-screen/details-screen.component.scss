@@ -1,0 +1,31 @@
+ng-container{
+    margin-top: 100px;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+}
+img{
+    width:100%;
+   height: 450px;
+}
+.date{
+    color:#ca2508;
+}
+.title{
+    font-size:larger;
+    font-weight: bold;
+}
+#modImage{
+    width:100px;
+     height:50px;
+}
+
+
+
+
+//************************ Rating****************************************
+ngb-rating {
+    color: #ca2508;
+    font-size: 1.5em;
+}
+

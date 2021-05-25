@@ -1,0 +1,71 @@
+
+  <div class="container-fluid">
+    <div class="d-flex row mt-3">
+      <h1 class="col-sm-6 col-md-7 col-lg-8">LUCY English</h1>
+
+      <div class="col-sm-3 col-md-3 col-lg-4 "> 
+        <input type = "text" placeholder="search.." [(ngModel)]="data"  > 
+      </div>
+    </div>
+
+    <br>
+    <!----------------------------- Viewing Videos data  ----------------------------->
+    <div class="row d-flex">
+      <table class="table col-sm-4 col-md-10 col-lg-12">
+        <thead>
+          <tr class="bg-white text-black">
+            <th ></th>
+            <th ><i class="fas fa-sort"></i>Title</th>
+            <th><i class="fas fa-sort"></i>Publish Date</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let video of video  | paginate: { itemsPerPage: 10, currentPage: page ,totalItems: totalLenght } |filter:data " >
+            <td ><a href="https://www.youtube.com/watch?v={{video.id.videoId}}" target="_blank">
+                <img [src]="video.snippet.thumbnails.default.url" 
+                class="card-img-top col-12" alt="..."></a></td>
+            <td > {{video.snippet.title}}</td>
+            <td >{{video.snippet.publishTime| date: "dd/MM/yyyy" }}</td>
+   
+            <td><button class="btn btn-outline-secondary" (click)="viewDetails(video.id.videoId)">Details</button> </td>
+          
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <!---------------Pagination----------- -->
+      <div class="d-flex flex-row-reverse">
+        <pagination-controls (pageChange)="page = $event">
+       
+        </pagination-controls>
+      </div>
+     
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

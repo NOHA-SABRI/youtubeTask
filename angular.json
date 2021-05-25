@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "youtubeChannel"
+  "defaultProject": "youtubeChannel",
+  "cli": {
+    "analytics": false
+  }
 }
