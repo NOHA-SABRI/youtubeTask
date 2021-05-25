@@ -20,9 +20,21 @@ img{
      height:50px;
 }
 
+// Model to save fav in local storage
+.modal-title {
+    font-weight: bold;
+    color: #cc2407;
+    font-size: larger;
+}
+p{
+    font-weight: bold;
+}
 
-
-
+button:hover{
+    color: black;
+    border: solid black 1px ;
+    background-color: rgba(221, 211, 211, 0.418);
+}
 //************************ Rating****************************************
 ngb-rating {
     color: #ca2508;
