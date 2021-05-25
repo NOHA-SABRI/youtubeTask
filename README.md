@@ -10,17 +10,17 @@ The topics covered in this task:
 
 Integrating with youtube api v3
 
-Routing (Home and Details Page)
+Pagination using ngx pagination
 
 Search in table
 
-Pagination using ngx pagination
+Routing (Home and Details Page)
 
 Adding favorite list to local storage and showing them.
 
 All the images are clickable and redirects to the youtube page of the video.
 
-You need to run this commands in terminal 
+You need to run this commands in terminal :
 run npm install ngx-pagination --save to activate pagination developed in home page.
 run ng add @ng-bootstrap/ng-bootstrap for styling purposes.
  and finally run npm ng2-search-filter for search in the table. 
